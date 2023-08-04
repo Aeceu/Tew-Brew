@@ -11,7 +11,7 @@ const handler = NextAuth({
         GoogleProvider({
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        })
+        }) 
     ],
 
     // Define callbacks to handle certain events during the authentication process
