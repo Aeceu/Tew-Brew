@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text_color {
+  @apply font-semibold bg-gradient-to-b from-blue-600 to-blue-100 bg-clip-text text-transparent;
+}
+
+.bg_color {
+  @apply bg-gradient-to-b shadow-md from-blue-400 to-blue-300;
+}
+
+.app {
+  @apply min-h-screen w-screen flex flex-col justify-between bg_color;
+}
+
+.solid_button {
+  @apply bg-black text-white font-bold rounded-full px-16  w-max  text-[.9rem] border-black border-[1px] hover:bg-transparent hover:text-black;
+}
+
+.outline_button {
+  @apply bg-transparent text-white font-bold rounded-full px-16  w-max  text-[.9rem] border-black border-[1px] hover:bg-black hover:text-white;
+}
+
+.glassmorphism {
+  @apply bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20;
+}
